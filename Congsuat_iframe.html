@@ -157,6 +157,27 @@ Highcharts.chart('container', {
     time: {
         useUTC: false
     },
+    rangeSelector: {
+        buttons: [{
+            count: 1,
+            type: 'minute',
+            text: '1M'
+        }, {
+            count: 5,
+            type: 'minute',
+            text: '5M'
+        }, {
+            count: 10,
+            type: 'minute',
+            text: '10M'
+        },
+        {
+            type: 'all',
+            text: 'All'
+        }],
+        inputEnabled: false,
+        selected: 0
+    },
 
     title: {
         text: 'CÔNG SUẤT'
